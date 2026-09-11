@@ -7,7 +7,9 @@
 | **기간** | 2026-09-09 ~ 2026-11-25 (10회차) |
 | **시간** | 매주 수요일 20:00 ~ 21:00 |
 | **장소** | Hspace |
-| **구성원** | 최우성(팀장), 권준희, 김보성, 김해인, 박소현, 이수민, 정유진 |
+| **구성원** | 7명 — @wsxchoi(팀장), @github-id-2, @github-id-3, @github-id-4, @github-id-5, @github-id-6, @github-id-7 |
+
+<!-- 구성원: 각자 본인 GitHub 아이디로 자리표시자를 교체해 주세요. 공개 저장소라 실명은 넣지 않습니다. -->
 
 ---
 
@@ -87,7 +89,7 @@ GitHub PR로 제출합니다. 코드 원본과 사고 과정을 함께 담습니
 |---|---|
 | 파일 | `submissions/W02/<github-아이디>.md` |
 | 브랜치 | `w02/<github-아이디>` |
-| PR 제목 | `[W02] 최우성 - 5문제` |
+| PR 제목 | `[W02] <이름> - 5문제` |
 | 마감 | 해당 주차 수요일 **20:00 (세션 시작 전)** |
 
 ### 3. 정산
@@ -130,11 +132,11 @@ GitHub PR로 제출합니다. 코드 원본과 사고 과정을 함께 담습니
 3. 저장소를 클론하고 브랜치를 만듭니다.
 
    ```bash
-   git clone <이-저장소-URL>
-   cd blind75-study
+   git clone https://github.com/blind75-study-boaz-26/problem-solving.git
+   cd problem-solving
    git switch -c w02/<github-아이디>
    cp templates/weekly-submission.md submissions/W02/<github-아이디>.md
    ```
 
 4. 문제를 풀고, LeetCode에서 Accepted를 받은 뒤 문서를 채웁니다.
-5. 수요일 20:00 전에 PR을 엽니다. PR 제목은 `[W02] 최우성 - 5문제` 형식입니다.
+5. 수요일 20:00 전에 PR을 엽니다. PR 제목은 `[W02] <이름> - 5문제` 형식입니다.
