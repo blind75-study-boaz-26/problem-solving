@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+
+# 로컬 실습 코드 (제출은 md로만)
+scratch/
+*.pyc
+__pycache__/
+.venv/
