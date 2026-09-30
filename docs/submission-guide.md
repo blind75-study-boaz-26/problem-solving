@@ -114,11 +114,30 @@ submissions/
 | 마감 | 해당 주차 **수요일 20:00 (세션 시작 전)** 까지 PR open |
 | 머지 | 세션 종료 후 팀장이 머지 |
 
-PR 본문에는 "선언한 목표 / 실제 푼 수" 만 적으면 충분합니다. 내용은 md 파일에 있습니다.
+### 제출 커맨드
 
-### 코드를 md 안에만 두는 이유
+새로운 주차 브랜치는 **반드시 최신 main에서** 만듭니다. 지난주 브랜치에서 이어서 만들면 지난주 커밋이 이번 주 PR에 같이 딸려 들어갑니다.
 
-별도 소스 파일을 만들지 않고 md 코드 블록에만 넣습니다. 사고 과정과 코드를 한 화면에서 같이 읽을 수 있어야 리뷰가 되기 때문입니다. 대신 코드를 돌려볼 수는 없으니, **제출 전에 LeetCode에서 Accepted를 받은 코드만 붙입니다.**
+아래는 5주차 예시입니다. `W05`/`w05`와 `wsxchoi`, 이름만 바꿔서 쓰면 됩니다.
+
+```bash
+# 1. main으로 이동해서 최신 상태로 맞추기
+git switch main
+git pull origin main
+
+# 2. 이번 주 브랜치 만들기
+git switch -c w05/wsxchoi
+
+# 3. 템플릿 복사
+cp templates/weekly-submission.md submissions/W05/wsxchoi.md
+
+# 4. (파일 작성)
+
+# 5. 커밋 & 푸시
+git add submissions/W05/wsxchoi.md
+git commit -m "[W05] <이름> - 5문제"
+git push -u origin w05/wsxchoi
+```
 
 ---
 
