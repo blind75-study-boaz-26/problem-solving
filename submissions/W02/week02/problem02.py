@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+# https://leetcode.com/problems/linked-list-cycle/description/?envType=problem-list-v2&envId=oizxjoit
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         seen = set()  # 방문한 노드를 저장할 집합
